@@ -139,6 +139,8 @@ class Version < ActiveRecord::Base
     self.full_name = "#{rubygem.name}-#{number}"
     self.full_name << "-#{platform}" if platformed?
 
+    $redis.set("versions:#{full_name}", rubygem.name)
+
     Version.update_all({:full_name => full_name}, {:id => id})
   end
 
