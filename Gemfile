@@ -4,7 +4,7 @@ gem "rails", "2.3.5"
 gem "rack",  "1.0.1"
 
 gem "aws-s3",            "0.6.2", :require => "aws/s3"
-gem "clearance",         "0.8.2"
+gem "clearance",         "0.8.8"
 gem "ddollar-pacecar",   "1.1.6", :require => "pacecar"
 gem "gchartrb",          "0.8",   :require => "google_chart"
 gem "gravtastic",        "2.1.3"
